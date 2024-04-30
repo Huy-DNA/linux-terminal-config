@@ -1,3 +1,5 @@
 # Neovim configuration
 
-I use the [plug](https://github.com/junegunn/vim-plug) package manager here.
+## Prerequisite
+* Plugin manager: [packer](https://github.com/wbthomason/packer.nvim).
+* Neovim: ^0.8.0
