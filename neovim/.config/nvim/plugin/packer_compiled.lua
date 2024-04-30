@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/hell/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-refactor"] = {
+    loaded = true,
+    path = "/home/hell/.local/share/nvim/site/pack/packer/start/nvim-treesitter-refactor",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-refactor"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/hell/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",

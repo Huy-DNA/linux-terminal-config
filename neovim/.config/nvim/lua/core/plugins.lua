@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
     tag = '0.1.4',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use 'nvim-treesitter/nvim-treesitter-refactor'
 
   -- My plugins here
   -- use 'foo1/bar1.nvim'
