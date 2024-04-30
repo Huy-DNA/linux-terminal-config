@@ -5,5 +5,6 @@ alias gck="git checkout"
 alias gll="git pull"
 alias ga="git add"
 alias gc="git commit"
+alias gs="git status"
 alias v=nvim
 alias vim=nvim
