@@ -36,6 +36,14 @@ return require('packer').startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
 
+  -- autosave
+  use({
+	  "Pocco81/auto-save.nvim",
+	  config = function()
+		  require("auto-save").setup {}
+	  end,
+  })
+
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
