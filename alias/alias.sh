@@ -8,3 +8,4 @@ alias gc="git commit"
 alias gs="git status"
 alias v=nvim
 alias vim=nvim
+alias code=nvim
