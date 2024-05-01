@@ -46,7 +46,6 @@ return require('packer').startup(function(use)
 
   -- Github
   use "tpope/vim-fugitive"
-
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
