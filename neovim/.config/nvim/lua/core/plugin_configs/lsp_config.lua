@@ -3,7 +3,7 @@ require("mason-lspconfig").setup({
   ensure_installed = { "lua_ls", "rust_analyzer", "clangd", "cssls", "dockerls", "eslint", "html", "marksman", "pylyzer", "sorbet", "rubocop", "tailwindcss", "tsserver", "vuels", "jsonls"  }
 })
 local on_attach = function(_, _)
-  vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, {})
+  vim.keymap.set({'n', 'i'}, '<F2>', vim.lsp.buf.rename, {})
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
   vim.keymap.set('n', '<F12>', vim.lsp.buf.definition, {})
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, {})
