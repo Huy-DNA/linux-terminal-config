@@ -3,12 +3,12 @@ require("mason-lspconfig").setup({
   ensure_installed = { "lua_ls", "rust_analyzer", "clangd", "cssls", "dockerls", "eslint", "html", "marksman", "pylyzer", "sorbet", "rubocop", "tailwindcss", "tsserver", "vuels", "jsonls"  }
 })
 local on_attach = function(_, _)
-  vim.keymap.set({'n', 'i'}, '<F2>', vim.lsp.buf.rename, {})
+  vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, {})
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
-  vim.keymap.set({'n', 'i'}, '<F12>', vim.lsp.buf.definition, {})
-  vim.keymap.set({'n', 'i'}, 'gi', vim.lsp.buf.implementation, {})
-  vim.keymap.set({'n', 'i'}, 'gr', require('telescope.builtin').lsp_references, {})
-  vim.keymap.set({'n', 'i'}, 'K', vim.lsp.buf.hover, {})
+  vim.keymap.set('n', '<F12>', vim.lsp.buf.definition, {})
+  vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, {})
+  vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, {})
+  vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
