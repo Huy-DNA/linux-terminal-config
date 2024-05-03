@@ -5,4 +5,5 @@ require("core.plugin_configs.telescope")
 require("core.plugin_configs.treesitter")
 require("core.plugin_configs.completion")
 require("core.plugin_configs.lsp_config")
+require("core.plugin_configs.lazy_git")
 

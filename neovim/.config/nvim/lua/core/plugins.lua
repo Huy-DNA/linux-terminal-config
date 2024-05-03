@@ -47,7 +47,18 @@ return require('packer').startup(function(use)
 	  end,
   })
 
-  -- Github
+  -- git
+  use({
+    "kdheepak/lazygit.nvim",
+    requires = {
+        "nvim-telescope/telescope.nvim",
+        "nvim-lua/plenary.nvim",
+    },
+    config = function()
+        require("telescope").load_extension("lazygit")
+    end,
+  })
+
   use "tpope/vim-fugitive"
   -- My plugins here
   -- use 'foo1/bar1.nvim'
