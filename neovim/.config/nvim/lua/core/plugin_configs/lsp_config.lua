@@ -76,3 +76,4 @@ lspconfig.vuels.setup {
   capabilities = capabilities,  
 }
 vim.g.rustfmt_autosave = 1
+vim.diagnostic.config({ update_in_insert = true })
