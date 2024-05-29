@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "rust_analyzer", "clangd", "cssls", "dockerls", "eslint", "html", "marksman", "pylyzer", "sorbet", "rubocop", "tailwindcss", "tsserver", "vuels", "jsonls"  }
+  ensure_installed = { "lua_ls", "rust_analyzer", "clangd", "cssls", "dockerls", "eslint", "html", "marksman", "sorbet", "rubocop", "tailwindcss", "tsserver", "vuels", "jsonls", 'pyright'  }
 })
 local on_attach = function(_, _)
   vim.keymap.set({'n', 'i'}, '<F2>', vim.lsp.buf.rename, {})
@@ -51,7 +51,7 @@ lspconfig.marksman.setup {
   on_attach = on_attach,
   capabilities = capabilities,  
 }
-lspconfig.pylyzer.setup {
+lspconfig.pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,  
 }
