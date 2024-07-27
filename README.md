@@ -1,2 +1,5 @@
-# linux-terminal-config
-I store my tmux and neovim config here
+# linux-terminal
+I store my config for linux terminal here:
+* zellij: https://github.com/zellij-org/zellij
+* jump: https://github.com/gsamokovarov/jump
+
