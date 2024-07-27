@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "vuels", "lua_ls", "rust_analyzer", "clangd", "cssls", "dockerls", "eslint", "html", "marksman", "sorbet", "rubocop", "tailwindcss", "tsserver", "jsonls", "pyright", "gopls", "golangci_lint_ls", "volar", "solargraph" }
+  ensure_installed = { "vuels", "lua_ls", "rust_analyzer", "clangd", "cssls", "dockerls", "eslint", "html", "marksman", "sorbet", "rubocop", "tailwindcss", "tsserver", "jsonls", "pyright", "gopls", "golangci_lint_ls", "volar", "solargraph", "volar" }
 })
 local on_attach = function(_, _)
   vim.keymap.set({'n', 'i'}, '<F2>', vim.lsp.buf.rename, {})
@@ -15,6 +15,10 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local lspconfig = require("lspconfig")
 
+lspconfig.volar.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,  
+}
 lspconfig.solargraph.setup {
   on_attach = on_attach,
   capabilities = capabilities,  
